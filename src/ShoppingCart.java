@@ -19,8 +19,8 @@ public class ShoppingCart {
                 listCart();
             } else if (input.startsWith("add")) {
                 addItem(input);
-            } else if (input.equals("delete")) {
-                input = input.substring(6);
+            } else if (input.startsWith("delete")) {
+                input = input.substring(7);
                 deleteItem(input);
             } else {System.out.println("Invalid command.");
             }
